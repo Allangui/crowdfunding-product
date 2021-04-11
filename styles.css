@@ -33,18 +33,21 @@ header{
     display: flex;
     justify-content: space-between;
     position: relative;
-    z-index: 101;
 }
 .toggle{
     background: transparent;
     border: none;
     outline: transparent;
+    z-index: 101;
+}
+.logo{
+    z-index: 99;
 }
 .nav-menu{
     position: absolute;
     width: 90vw;
     transform: translateY(-150%);
-    transition: .3s;
+    transition: .2s;
     z-index: 100;
     border-radius: 15px;
 
@@ -331,7 +334,10 @@ margin-right: -20px;
     position: absolute;
     top: 150px;
     margin :0 auto;
-    width : 90vw
+    width : 90vw;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50% , -50%);
 }
 .card-success img{
     margin:10px auto 20px;
