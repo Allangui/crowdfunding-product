@@ -13,7 +13,6 @@
 
 </head>
 <body>
-<div class="container">
   <header>
     <div class="menu">
       <img class="logo" src="images/logo.svg" alt="crowdfund">
@@ -27,14 +26,17 @@
       </ul>
     </nav>
   </header>
+<div class="container">
 
   <section class="sec1">  
-    <h1>Mastercraft Bamboo<br>Monitor Riser</h1>
+    <h1>Mastercraft Bamboo<br> Monitor Riser</h1>
     <p>A beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
   
     <nav>
     <a href="#"><button type="button" class="btn-back">Back this project</button></a>
-    <button type="button" class="btn-booksmark"><img src="images/icon-bookmark.svg" alt="bookmarks"></button>
+      <div class="bookmark-bg">
+        <button type="button" class="btn-bookmark"><img src="images/icon-bookmark.svg" alt="bookmark"><div class="bookmark-text">Bookmark</div></button>
+      </div>
     </nav>
   </section>
 
@@ -43,8 +45,12 @@
       <li><strong>$89,914</strong><br> of $100,000 backed</li>
       <li><strong>5,007</strong><br> total backers</li>
       <li><strong>56</strong><br> days left</li>
-      <li> <progress class="progress" max="100" value="70"></progress> </li>
     </ul>
+    <div class="progress">
+      <div class="progress-value">
+
+      </div>
+    </div>
   </section>
 
   <section class="sec3">
@@ -58,30 +64,42 @@
       to allow notepads, pens, and USB sticks to be stored under the stand.</p>
     
     <article class="card card1">
-    <h3>Bamboo Stand</h3>
-    <div class="pledge">Pledge $25 or more</div>
+      <div class="flexondek">
+        <h3>Bamboo Stand</h3>
+        <div class="pledge">Pledge $25 or more</div>
+      </div>
     <p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and 
       you’ll be added to a special Backer member list.</p>
-    <div class="left"><strong>101</strong>left</div>
-    <button type="button" class="btn-reward">Select Reward</button>
+      <div class="flexondek">
+        <div class="left"><strong>101</strong>left</div>
+        <button type="button" class="btn-reward">Select Reward</button>
+      </div>
     </article>
   
     <article class="card card2">
-    <h3>Black Edition Stand</h3>
-    <div class="pledge">Pledge $75 or more</div>
+    <div class="flexondek">
+      <h3>Black Edition Stand</h3>
+      <div class="pledge">Pledge $75 or more</div>
+    </div>
     <p>You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer 
       member list. Shipping is included.</p>
-    <div class="left"><strong>64 </strong> left</div>
-    <button type="button" class="btn-reward">Select Reward</button>
+    <div class="flexondek">
+      <div class="left"><strong>64 </strong> left</div>
+      <button type="button" class="btn-reward">Select Reward</button>
+    </div>
     </article>
   
     <article class="card card3">
-    <h3>Mahogany Special Edition</h3>
-    <div class="pledge">Pledge $200 or more</div>
+    <div class="flexondek">
+      <h3>Mahogany Special Edition</h3>
+      <div class="pledge">Pledge $200 or more</div>
+    </div>
     <p>You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added 
       to our Backer member list. Shipping is included.</p>
-    <div class="left"><strong>0 </strong>left</div>
-    <button type="button" class="btn-outofstock">Out of Stock</button>
+      <div class="flexondek">
+        <div class="left"><strong>0 </strong>left</div>
+        <button type="button" class="btn-outofstock">Out of Stock</button>
+      </div>
     </article>
   </section>
 
@@ -98,38 +116,44 @@
     </div>
     <p>Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
 
-  <div class="card card-pop1">
-      <div class="grid-checkbox">
-        <input type="checkbox" class="check">
-        <h3>Pledge with no reward</h3>
-      </div>
-      <div class="zone-click">
-      <p>Choose to support us without a reward if you simply believe in our project. As a backer, 
-        you will be signed up to receive product updates via email.</p>
+  <div class="card card-pop">
+      <div class="card-pop-dek">
+        <div class="grid-checkbox">
+          <input type="checkbox" class="check">
+          <h3>Pledge with no reward</h3>
+        </div>
+        <div class="zone-click">
+          <p>Choose to support us without a reward if you simply believe in our project. As a backer, 
+            you will be signed up to receive product updates via email.</p>
+        </div>
       </div>
       <div class="selected hide-full">
-
       </div>
   </div>
 
-  <div class="card card-pop2">
-      <div class="grid-checkbox">
-        <input type="checkbox" class="check ">
-        <h3>Bamboo Stand</h3>
-        <div class="pledge">Pledge $25 or more</div>
+  <div class="card card-pop">
+      <div class="card-pop-dek">
+        <div class="grid-checkbox">
+          <input type="checkbox" class="check ">
+          <h3>Bamboo Stand</h3>
+          <div class="pledge">Pledge $25 or more</div>
+        </div>
+        <div class="zone-click ">
+        <p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
+          you’ll be added to a special Backer member list.</p>
+        </div>
+        <div class="left"><strong>101</strong> left</div>
       </div>
-      <div class="zone-click ">
-      <p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
-        you’ll be added to a special Backer member list.</p>
-      <div class="left"><strong>101</strong> left</div>
-      </div>
+      
 
       <!-- Selected pledge start -->
       <div class="selected hide">
-        <p>Enter your pledge</p>
-        <div class="flex-submit">
-          <input type="text" class="input-pledge" placeholder="Pledge" value="25">
-          <a href="#"><button type="submit" class="btn-submit">Continue</button></a>
+        <div class="selected-dek">
+          <p>Enter your pledge</p>
+          <div class="flex-submit">
+            <input type="text" class="input-pledge" placeholder="" value="25">
+            <a href="#"><button type="submit" class="btn-submit">Continue</button></a>
+          </div>
         </div>
       </div>
       <!-- Selected pledge end -->
@@ -137,24 +161,29 @@
 
 
 
-  <div class="card card-pop3">
-      <div class="grid-checkbox">
-        <input type="checkbox" class="check " >
-        <h3>Black Edition Stand</h3>
-        <div class="pledge">Pledge $75 or more</div>
+  <div class="card card-pop">
+      <div class="card-pop-dek">
+        <div class="grid-checkbox">
+          <input type="checkbox" class="check " >
+          <h3>Black Edition Stand</h3>
+          <div class="pledge">Pledge $75 or more</div>
+        </div>
+        <div class="zone-click ">
+        <p>You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
+          member list. Shipping is included.</p>
+        </div>
+        <div class="left"><strong>64</strong> left</div>
       </div>
-      <div class="zone-click ">
-      <p>You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
-        member list. Shipping is included.</p>
-      <div class="left"><strong>64</strong> left</div>
-      </div>
+
 
       <!-- Selected pledge start -->
       <div class="selected hide">
+        <div class="selected-dek">
         <p>Enter your pledge</p>
-        <div class="flex-submit">
-          <input type="text" class="input-pledge" placeholder="Pledge" value="75">
-          <a href="#"><button type="submit" class="btn-submit">Continue</button></a>
+          <div class="flex-submit">
+            <input type="text" class="input-pledge" placeholder="" value="75">
+            <a href="#"><button type="submit" class="btn-submit">Continue</button></a>
+          </div>
         </div>
       </div>
       <!-- Selected pledge end -->
@@ -162,28 +191,32 @@
 
 
 
-  <div class="card card-pop4">
-      <div class="grid-checkbox">
-        <input type="checkbox" class="check ">
-        <h3>Mahogany Special Edition</h3>
-        <div class="pledge">Pledge $200 or more</div>
-      </div> 
-      <div class="zone-click ">
-      <p>You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added
-        to our Backer member list. Shipping is included.</p>
-      <div class="left"><strong>0</strong> left</div>
+  <div class="card card-pop">
+      <div class="card-pop-dek">
+        <div class="grid-checkbox">
+          <input type="checkbox" class="check ">
+          <h3>Mahogany Special Edition</h3>
+          <div class="pledge">Pledge $200 or more</div>
+        </div> 
+        <div class="zone-click ">
+        <p>You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added
+          to our Backer member list. Shipping is included.</p>
+        </div>
+        <div class="left"><strong>0</strong> left</div>
       </div>
 
       <!-- Selected pledge  start -->
       <div class="selected hide">
+        <div class="selected-dek">
         <p>Enter your pledge</p>
-        <div class="flex-submit">
-          <input type="text" class="input-pledge" placeholder="Pledge" value="200">
-          <a href="#"><button type="submit" class="btn-submit">Continue</button></a>
+          <div class="flex-submit">
+            <input type="text" class="input-pledge" placeholder="" value="200">
+            <a href="#"><button type="submit" class="btn-submit">Continue</button></a>
+          </div>
         </div>
       </div>
       <!-- Selected pledge end -->
-  </div>
+  </div>  
 
 
 
@@ -192,13 +225,13 @@
   </section>
   <!-- Success modal start -->
 
-<div class="card card-success hide">
-  <img src="images/icon-check.svg" alt="check">
-  <h2>Thanks for your support!</h2>
-  <p>Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
-    an email once our campaign is completed.</p>
-  <button type="button" class="btn-success">Got it!</button>
-</div>
+  <div class="card card-success hide">
+    <img src="images/icon-check.svg" alt="check">
+    <h2>Thanks for your support!</h2>
+    <p>Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
+      an email once our campaign is completed.</p>
+    <button type="button" class="btn-success">Got it!</button>
+  </div>
 
   <!-- Success modal end -->
 </div>

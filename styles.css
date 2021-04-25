@@ -22,9 +22,10 @@ body{
     font-family: 'Commissioner', sans-serif;
 }
 .container{
-    padding:7vw 5vw 20vw;
+    padding:0 5vw 20vw;
 }
 header{
+    padding:7vw 5vw 0;
     margin-bottom: 200px;
     position: relative;
 
@@ -113,7 +114,7 @@ h1{
 }
 .btn-back{
     padding: 0 40px;
-    height: 60px;
+    height: 56px;
     background-color: hsl(176, 50%, 47%);
     border-radius: 30px;
     border:none;
@@ -123,16 +124,19 @@ h1{
     outline: transparent;
     cursor: pointer;
 }
-.btn-booksmark , .close-popup{
+.btn-bookmark , .close-popup{
     background-color: transparent;
     border: none;
     outline: transparent;
     cursor: pointer;
 }
-
+.bookmark-text{
+    display:none;
+}
 .sec2{
     font-size: .9rem;
-    color: hsl(0, 0%, 70%);
+    color: hsl(0, 0%, 50%);
+    font-weight: 500;
 }
 .sec2 ul{
     display: flex;
@@ -154,15 +158,37 @@ h1{
     left:50%;
     transform: translateX(-50%);
 }
+.sec2 li:last-child{
+    
+    padding-top:10px;
+}
 .sec2 strong{
     font-size:2rem;
     color: black;
     line-height: 3.5rem;
 }
-.progress{
-    width:90%;
-    height:25px;
+
+/*                PROGRESS BAR                */
+.progress {
+    background-color: hsl(0, 0%, 95%);
+    width: 90%;
+    border-radius: 15px;
+    margin:0 auto;
+    height:13px;
 }
+
+.progress-value {
+    background-color: hsl(176, 50%, 47%);
+    color: white;
+    padding: 1%;
+    text-align: right;
+    font-size: 20px;
+    border-radius: 15px;
+    width:70%;
+    height:13px;
+}
+
+/*               END PROGRESS BAR                */
 
 .sec3 p{
     color: hsl(0, 0%, 70%);
@@ -262,6 +288,23 @@ h3{
     grid-column:1 ;
     grid-row: span 2 ;
 }
+.check[type=checkbox]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+
+    border-radius: 20px;
+    height: 25px;
+    width: 25px;
+    background: #fff;
+    border: 1px solid #ccc;
+    outline: transparent;
+    
+}
+.check[type=checkbox]:checked{
+background: hsl(176, 50%, 47%);
+    
+}
 .flex-checkbox{
     display: flex;
 }
@@ -327,6 +370,9 @@ margin-right: -20px;
     cursor: pointer;
     outline: transparent;
 }
+.card-selected{
+    border: solid 2px hsl(176, 50%, 47%);
+}
 .card-success{
     text-align: center;
     background-color: white;
@@ -359,5 +405,212 @@ margin-right: -20px;
     font-size: .9rem;
     outline: transparent;
     cursor: pointer;
+}
 
+@media only screen and (min-width : 750px){
+    body{
+        background: url(images/image-hero-desktop.jpg) top center / contain no-repeat rgba(230, 230, 230, 0.288);
+    }
+    .container{
+        margin:50px auto 20vw;
+        padding:0;
+        width:60vw;
+        min-width: 550px;
+        max-width: 700px;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        padding:40px 10vw 0;    
+        margin-bottom: 15vw;    
+    }
+    .menu{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+    .toggle{
+        display: none;
+    }
+    .nav-menu{
+        position: relative;
+        width: auto;
+        transform: translateY(0);
+        transition: 0;
+        z-index: 100;
+        border-radius: 0;
+    
+    }
+    .nav-menu ul{
+        display: flex;
+        flex-direction: row;
+        background-color: transparent;
+        border-radius: 15px;
+    
+    }
+    .nav-menu ul li{
+        font-size:1.3rem ;
+        font-size: 1rem;
+        font-weight: 500;
+        padding: 0 ;
+        margin-right:40px;
+        border-bottom: none;
+    }
+    .nav-menu ul li a{
+        color: white;
+        font-weight: 400;
+    }
+    section{
+        padding:50px 50px;
+    }
+    .sec1 h1 br{
+        display: none;
+    }
+    .sec1 nav{
+        padding: 10px 0;
+    }
+    .btn-bookmark{
+        display:flex;
+        align-self: center;
+
+    }
+    .bookmark-text{
+        display:inline-block;
+        font-weight: 700;
+        color: hsl(0, 0%, 30%);
+        align-self: center;
+        padding:0 30px;
+    }
+    .bookmark-bg{
+        background-color: hsl(0, 0%, 95%);
+        border-radius: 30px;
+    }
+    .sec2 ul{
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        justify-content: space-arround;
+        margin-bottom: 30px;
+    }
+    .sec2 li{
+        position: relative;
+        padding:0 10% 0 30px;
+        
+    }
+    .sec2 li:first-child::after , .sec2 li:nth-child(2)::after{
+        content:"";
+        display:inline-block;
+        position: absolute;
+        width:1px;
+        height:80%;
+        background-color:rgb(196, 196, 196,.7);
+        left:100%;
+        top:10px;
+        transform: translateX(0);
+
+    }
+    .sec2 li:first-child{
+        padding-left:0;
+    }
+    .sec2 li:last-child{
+        padding-bottom: 0;
+        padding-top:0;
+        padding-right:0;
+    }
+    .sec2 strong{
+        font-size:2rem;
+        color: black;
+        line-height: 3.5rem;
+    }
+    .progress{
+        width:100%;
+    }
+    .flexondek{
+        display:flex;
+        justify-content: space-between;
+    }
+    .left , .btn-reward{
+        margin:0;
+    }
+    .pledge{
+        display:inline-block;
+        line-height: 2rem;
+    }
+    .sec-popup{
+        margin:50px auto 0;
+        width:60vw;
+        min-width: 550px;
+        max-width: 700px;
+    }
+    .card-pop-dek{
+        display: grid;
+        grid-template-columns: 50px auto auto 1fr ;
+        grid-template-rows: 1fr 1fr;
+    }
+    .grid-checkbox{
+        grid-template-columns: 50px 1fr 1fr;
+        grid-column: span 3;
+        grid-row: 1;
+        align-self: center;
+    }
+    .grid-checkbox .check{
+        grid-column: 1;
+        grid-row: 1;
+        align-self: center;
+
+    }
+    .grid-checkbox h3{
+        grid-column: 2 ;
+        grid-row: 1;
+        align-self: center;
+        margin-right: 20px;
+
+    }
+    .grid-checkbox .pledge{
+        grid-column: 3;
+        grid-row: 1;
+        align-self: center;
+
+    }
+    .card-pop-dek .left{
+        grid-column: 4;
+        grid-row: 1;
+        align-self: center;
+        justify-self: right;
+    }
+    .card-pop-dek .zone-click {
+        grid-column: 2 / span 4 ;
+        grid-row: 2;
+    }
+    .card-pop-dek .zone-click p {
+        margin:0 0 25px 0;
+    }
+    .left strong{
+        font-size: 1.2rem;
+    }
+    .selected-dek{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0 0 20px;
+    }
+    .selected-dek p {
+        margin : 0;
+        align-self: center;
+    }
+    .flex-submit{
+        align-items: center;
+        justify-content: space-between;
+
+    }
+    .input-pledge{
+        margin-right: 20px;
+    }
+
+
+
+    .card-success{
+        width : 50vw;
+        min-width: 400px;
+        max-width: 600px;
+    }
 }
